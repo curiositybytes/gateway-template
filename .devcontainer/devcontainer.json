@@ -1,0 +1,15 @@
+{
+  "name": "Spring Boot (Maven) DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-boot-dashboard"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "chmod +x mvnw || true && ./mvnw -q -DskipTests clean package || true",
+  "remoteUser": "vscode"
+}
