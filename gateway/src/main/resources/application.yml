@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+      # TODO:
+      # Configure a route with id "posts-route"
+      # that forwards any request from /posts/**
+      # to https://jsonplaceholder.typicode.com
+      #
+      # Example:
+      #   http://localhost:8080/posts/1
+      #   → should fetch from https://jsonplaceholder.typicode.com/posts/1
+      #
+      # Configure this route to use the logging filter
+
+server:
+  port: 8080
